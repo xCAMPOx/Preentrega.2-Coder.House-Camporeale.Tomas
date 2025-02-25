@@ -1,0 +1,285 @@
+/*SELECTOR - PROPIEDAD - VALOR*/
+
+header { 
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 70px;
+    background-color: rgb(16, 22, 22);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+    border-color: aqua;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 20px;
+    
+}
+
+nav a:hover {
+    color:aqua;   
+}
+
+.logo img { 
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 50px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+body { 
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(16, 22, 22);
+}
+
+h1 {
+    font-size: 20x;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.video-container {
+    width: 100%;
+    background-clip: border-box;
+    height: auto;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.diseño-web-contaier {
+    gap: 20px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-top: 250px;
+}
+
+/*el display: flex queda mejor si lo saco*/
+.diseño {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(16, 22, 22);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+    padding: 10px;
+    width: 45%;
+}
+
+.diseño img {
+    max-width: 600px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/*el display: flex queda mejor si lo saco
+aca use el border, con solid y un color*/
+.requisitos {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(16, 22, 22);
+    border: 3px solid aqua;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+    padding: 10px;
+    width: 45%;
+}
+
+.requisitos img {
+    max-width: 600px;
+    height: auto;
+    margin-right: 15px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 255, 255);
+}
+
+.consultoria-marketing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.dominio {
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.archivos-sitio-web {
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.hosting-servidor {
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.clientes-container {
+    display: grid;
+    grid-template-columns: 200px repeat (2. 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;    
+    margin-top: 150px;
+}
+
+.clientes-img {
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+.clientes-img img {
+    gap: 20px;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ver-mas {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.historia-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.historia {
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contactos-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.form-contanier {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 2);
+    max-width: 500px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="nombre"],
+input[type="email"],
+input[type="telefono"],
+input[type="asunto"],
+textarea {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 255, 255);
+    border-radius: 5px;
+}
+
+footer {
+    margin: 0;
+    padding-right: 20px;
+    padding-top: 300px;
+    display: flex;    
+    height: 70px;
+    background-color: rgb(16, 22, 22);
+    align-items: center;       
+}
+
+.footer-logo {
+    display: flex;
+    right: 0;
+    height: 50px;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 20px;;
+    justify-content:left;
+    left: 0;
+}
+
+.footer-container {
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    margin: 0 auto;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(0, 255, 255);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+    
+}
