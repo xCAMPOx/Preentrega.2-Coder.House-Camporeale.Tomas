@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C-MO</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
-  
+
   <body>
     <header>
       <a href="../index.html" class="logo">
         <img src="../assets/img/C-MO WHITE.png" alt="logo de la pagina"
       /></a>
-      <nav>
-        <ul>
-          <li><a href="./diseñoWeb.html"> DISEÑO WEB</a></li>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav class="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+          <li><a href="../views/diseñoWeb.html"> DISEÑO WEB</a></li>
           <li>
-            <a href="./consultoriaDigital.html"> CONSULTORIA DIGITAL</a>
+            <a href="../views/consultoriaDigital.html"> CONSULTORIA DIGITAL</a>
           </li>
-          <li><a href="./clientes.html"> CLIENTES</a></li>
-          <li><a href="./quienesSomos.html"> QUIENES SOMOS</a></li>
-          <li><a href="./contacto.html"> CONTACTO</a></li>
+          <li><a href="../views/clientes.html"> CLIENTES</a></li>
+          <li><a href="../views/quienesSomos.html"> QUIENES SOMOS</a></li>
+          <li><a href="../views/contacto.html"> CONTACTO</a></li>
         </ul>
       </nav>
     </header>
@@ -29,53 +39,58 @@
     <main>
       <div class="diseño-web-contaier">
         <section class="diseño">
-          <img src="../assets/img/web-design.jpg" alt="imagen de diseño web">
-            <div>
-              <h2>Diseño de paginas web</h2>
-              <p>Todo lo que necesitas saber para realizar y construir la pagina web que deseas.</p>
-              <button>Mas Info</button>
-            </div>
-      </section>
-      <section class="requisitos">
-        <img src="../assets/img/your-design.jpg" alt="imagen de tu diseño">
-        <div>
-        <h2>Requisitos para crear mi pagina web</h2>
-         <p>Una pagina web tiene varias partes que la coponen.
-          Estaremos a tu lado para que todo cumpla con tus expectativas.
-         </p>
-         <button>Mas Info</button>
-        </div>
-     </section>
-    </div>
-
-
+          <img src="../assets/img/web-design.jpg" alt="imagen de diseño web" />
+          <div>
+            <h2>Diseño de paginas web</h2>
+            <p>
+              Todo lo que necesitas saber para realizar y construir la pagina
+              web que deseas.
+            </p>
+            <button>Mas Info</button>
+          </div>
+        </section>
+        <section class="requisitos">
+          <img src="../assets/img/your-design.jpg" alt="imagen de tu diseño" />
+          <div>
+            <h2>Requisitos para crear mi pagina web</h2>
+            <p>
+              Una pagina web tiene varias partes que la coponen. Estaremos a tu
+              lado para que todo cumpla con tus expectativas.
+            </p>
+            <button>Mas Info</button>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer-container">
-          <div class="footer-links">
-            <ul>
-              <li><a href="#">Aviso Legal y Política de Privacidad</a></li>
-              <li><a href="#">Política de Cookies</a></li>
-              <li><a href="#">Todos los derechos reservados</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <div class="social-link">
-              <a href="https://facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i></a>
-              <a href="https://instagram.com" target="_blank">
-                <i class="fab fa-instagram"></i></a>
-              <a href="https://whatsapp.com" target="_blank">
-                <i class="fab fa-whatsapp"></i></a>
-              <a href="https://linkedin.com" target="_blank">
-                <i class="fab fa-linkedin"></i></a>
-            </div>
+        <div class="footer-legales">
+          <ul>
+            <li><a href="#">Aviso Legal y Política de Privacidad</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">Todos los derechos reservados</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <div class="social-link">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://whatsapp.com" target="_blank">
+              <i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i
+            ></a>
           </div>
         </div>
         <a href="../index.html" class="footer-logo">
           <img src="../assets/img/C-MO WHITE.png" alt="logo de la pagina"
-        /></a>        
+        /></a>
       </div>
     </footer>
   </body>
