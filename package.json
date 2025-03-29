@@ -1,0 +1,20 @@
+{
+  "name": "preentrega-1---camporeale-tomas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xCAMPOx/Preentrega-2---CoderHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xCAMPOx/Preentrega-2---CoderHouse/issues"
+  },
+  "homepage": "https://github.com/xCAMPOx/Preentrega-2---CoderHouse#readme",
+  "description": ""
+}
