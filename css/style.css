@@ -36,52 +36,28 @@ body {
   header.navbar {
     height: 100px;
     background-color: rgb(16, 22, 22);
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     z-index: 1000;
+    margin: 10px;
   }
   
   .custom-header {
     background-color: rgb(16, 22, 22);
-    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     height: 100px;
   }
-
-  /* Estilo para el menú colapsable */
-.custom-collapse {
-  background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
-  border-radius: 3px;
-  padding: 15px;
-  position: absolute;
-  top: 100%; /* justo debajo del header */
-  right: 20px; /* alineado a la derecha */
-  width: auto;
-  min-width: 200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-  z-index: 999;
-}
-
-@media (min-width: 992px) {
-  .custom-collapse {
-    position: static !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-  }
-}
-
-
-
+  
   .navbar-nav .nav-link {
+    color: white ;
     padding-right: 20px;
-    transition: all 0.3s ease;
     font-weight: 600;
   }
   
   .navbar-nav .nav-link:hover {
-    color: rgb(59, 167, 59) !important;
+    color: rgb(59, 167, 59);
+    transition: all 0.4s ease !important;
+    transform: translateX(-5px);
   }
   
   /* Personalización del botón hamburguesa */
@@ -96,8 +72,9 @@ body {
   /* === VIDEO === */
   .video-container {
     width: 100%;
+    background-clip: border-box;
+    height: auto;
     overflow: hidden;
-    padding-top: 100px; /* para que no quede debajo del header fijo */
   }
   
   video {
@@ -114,6 +91,7 @@ body {
   }
   
   .carousel-item img {
+    display: flex;
     width: 100%;
     height: auto;
   }
@@ -141,7 +119,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
     padding: 10px;
-    width: 45%;
+    width: 45%;    
   }
   
   .diseño img,
@@ -160,7 +138,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
   }
   
   button:hover {
@@ -205,6 +183,10 @@ body {
     width: 50%;
     height: auto;
     border-radius: 8px;
+  }
+
+  .ver-mas {
+    text-align: center;
   }
   
   /* === QUIÉNES SOMOS === */
@@ -260,7 +242,7 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
   }
-  
+    
   /* === FOOTER === */
   footer {
     margin: 0;
@@ -301,7 +283,7 @@ body {
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
   }
   
   .social-link a:hover {
@@ -327,6 +309,38 @@ body {
     .diseño,
     .requisitos {
       width: 100%;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .custom-collapse {
+      position: absolute;
+      top: 100%; /* justo debajo del header */
+      right: 10px; /* alineado al botón hamburguesa */
+      background-color: rgba(0, 0, 0, 0.9); /* fondo translúcido */
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+      z-index: 999;
+      
+    }
+  
+    /* Alinear los items del menú en columna */
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 10px 0;
+      text-align: right;
+      transition: all 0.4s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: rgb(59, 167, 59) !important;
+      transform: translateX(-5px);
     }
   }
   
